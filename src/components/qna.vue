@@ -19,14 +19,14 @@
 
     <div class="container-fluid" style="margin: 0px; padding: 0px; margin-top: 40px">
       <ol>
-        <li><a data-toggle="collapse" href="#Q1" role="button">Q. 가나다라마바사아자차카타파하?</a></li>
+        <li><a data-toggle="collapse" href="#Q1" role="button"><div>Q. 가나다라마바사아자차카타파하?</div> </a></li>
         <div class="collapse" id="Q1">
           <div class="card card-body">
             <a>A. 가나다라마바사아자차카타파하</a>
           </div>
         </div>
 
-        <li><a data-toggle="collapse" href="#Q2" role="button">Q. ABCDEFGHIJKLMNOPQRSTUVWXYZ?</a></li>
+        <li><a data-toggle="collapse" href="#Q2" role="button"><div>Q. ABCDEFGHIJKLMNOPQRSTUVWXYZ?</div> </a></li>
         <div class="collapse" id="Q2">
           <div class="card card-body">
             <a>A. ABCDEFGHIJKLMNOPQRSTUVWXYZ</a>
