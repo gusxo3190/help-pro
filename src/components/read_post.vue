@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="box">
+    <div class="box" style="border: 1px solid black;">
       <div id="title"  style="margin-right: 55%"> 제목</div>  <a style="display: inline; font-size: 20px">|</a>
 
       <div class="inbox"> 게시판 이름</div>

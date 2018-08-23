@@ -2,7 +2,7 @@
   <div id="board" class="container">
     <h3>여기에 게시판 이름</h3>
     <hr>
-    <a href="#/write_post" class="btn btn-outline-dark float-right"><b><i class="fas fa-plus"></i></b>글쓰기</a>
+    <a id="write" href="#/write_post" class="btn btn-outline-dark float-right"><b><i class="fas fa-plus"></i></b>글쓰기</a>
 
     <table style="width: 100%;" class="table table-hover table-sm custab">
       <thead class="thead-light">
@@ -55,7 +55,7 @@
 <style scoped>
 #board{
   margin-top: 20px;
-  padding: 5px;
+  /*padding: 5px;*/
 }
 .custab{
   border: 1px solid #ccc;
@@ -71,4 +71,7 @@
   a{
     color: black;
   }
+#write{
+  margin-bottom: 10px;
+}
 </style>

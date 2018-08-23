@@ -6,7 +6,6 @@
 
         <div class="input-group col" id="D1">
           <button style="margin-left: 10px" class="btn btn-outline-dark" data-toggle="modal" data-target="#createproject"><i class="fas fa-plus"> 프로젝트 추가</i></button>
-          <!--<button style="margin-left: 10px" class="btn btn-outline-dark" data-toggle="modal" data-target="#deleteproject"><i class="fas fa-minus"> 프로젝트 삭제</i></button>-->
           <input type="text"  class="form-control" placeholder="검색..."  aria-describedby="button-addon2">
           <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
@@ -17,8 +16,7 @@
 
       <div class="row">
 
-        <div class="card col" style="height: 22rem; padding: 5px">
-          <!--<img src="../assets/logo.png" style="width: 100%; height: 40%">-->
+        <div class="card col">
           <h3><a>프로젝트 1</a> <!--<button class="btn btn-primary dropdown-toggle" style="float: right">설정</button>-->
             <b-dropdown variant="outline-dark" style="float: right">
               <b-dropdown-item data-toggle="modal" data-target="#memberinvite">멤버</b-dropdown-item>
@@ -34,15 +32,14 @@
             <button class="btn btn-outline-dark"style="width: 100%">확인</button>
           </div>
         </div>
-        <div class="card col" style="height: 22rem; padding: 5px">ㅁㄴㅇ</div>
-        <div class="card col" style="height: 22rem; padding: 5px">ㅁㄴㅇ</div>
-        <div class="card col" style="height: 22rem; padding: 5px">ㅁㄴㅇ</div>
+        <div class="card col">ㅁㄴㅇ</div>
+        <div class="card col">ㅁㄴㅇ</div>
+        <div class="card col" >ㅁㄴㅇ</div>
         <div class="w-100"></div>
-        <div class="card col" style="height: 22rem; padding: 5px">ㅁㄴㅇ</div>
-        <div class="card col" style="height: 22rem; padding: 5px">ㅁㄴㅇ</div>
-        <div class="card col" style="height: 22rem; padding: 5px">ㅁㄴㅇ</div>
-        <div class="card col" style="height: 22rem; padding: 5px">ㅁㄴㅇ</div>
-
+        <div class="card col">ㅁㄴㅇ</div>
+        <div class="card col">ㅁㄴㅇ</div>
+        <div class="card col">ㅁㄴㅇ</div>
+        <div class="card col">ㅁㄴㅇ</div>
 
       </div>
       <!-- 프로젝트 생성 모달 -->
@@ -63,7 +60,7 @@
               <textarea type="text" class="form-control" placeholder="여기에 프로젝트 설명을 적어주세요." style="resize: none;" rows="5"></textarea>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">프로젝트 등록</button>
+              <button type="button" class="btn btn-primary" id="create_card">프로젝트 등록</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
 
             </div>
@@ -116,13 +113,6 @@
               <hr>
               <div>
                 <div class="row">
-                  <!--<div class="col member" >-->
-                  <!--<a class="btn btn-outline-dark member_b"><img src="../assets/logo.png" class="rounded-circle" style="height: 40px;width: 40px; background-color: azure">asd</a>-->
-                  <!--</div>-->
-                  <!--<div class="col member">-->
-                  <!--<a class="btn btn-outline-dark member_b"><img src="../assets/logo.png" class="rounded-circle" style="height: 40px;width: 40px; background-color: azure">asd</a>-->
-                  <!--</div>-->
-                  <!--<div class="w-100"></div>-->
                   <div class="col member_line">
                     <i class="fas fa-crown" style="color: gold" ></i>
                     <a class="member_b"><img src="../assets/logo.png" class="rounded-circle">임현태</a>
@@ -191,20 +181,25 @@
     export default {
         name: "newproject"
     }
+    $("#create_card").on("click",function (e) {
+
+    })
 </script>
 
 <style scoped>
 #NP{
-  border:1px solid #c6c8ca; padding:10px; margin: 20px;
+  border:1px solid #c6c8ca; padding:10px; margin-top: 20px;
 }
-/*#D1{*/
-  /*margin-left: 40%;*/
-/*}*/
+
 input{
   margin-left: 10px;
 }
   .card{
     margin: 10px;
+    height: 350px;
+    padding: 5px;
+    display: inline-block;
+    float: left;
   }
   .member_line{
     border: solid 1px #c6c8ca;
@@ -213,10 +208,7 @@ input{
     margin: 5px;
     border-radius: 10px;
   }
-.member{
-  padding: 5px;
-  text-align: left;
-}
+
   .member_b{
     width: 100%;
     height: 100%;
